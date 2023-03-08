@@ -1,0 +1,37 @@
+.team{
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+    height: 215px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-top-right-radius: 17px;
+    gap: 30px;
+    transition: transform 0.2s;
+
+    &__title{
+        display: flex;
+        /* flex-direction: column; */
+        line-height: 0px;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 20px;
+
+        img{
+            width: 100px;
+        }
+    }
+
+    &__img{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 400px;
+        }
+    }
+}
+
+.team:hover {
+    transform: scale(1.05);
+}

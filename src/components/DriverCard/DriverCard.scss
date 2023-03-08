@@ -1,0 +1,30 @@
+.driver{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 315px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    /* border-bottom: 2px solid black; */
+    border-top-right-radius: 17px;
+    transition: transform 0.2s;
+
+    &__title{
+        display: flex;
+        flex-direction: column;
+        line-height: 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 20px;
+        padding-left: 5%;
+    }
+
+    &__img{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.driver:hover {
+    transform: scale(1.05);
+}

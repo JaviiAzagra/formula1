@@ -1,37 +1,247 @@
-.team{
+.team {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  gap: 30px;
+  transition: transform 0.2s;
+
+  &__title {
     display: flex;
-    flex-direction: column;
-    width: 630px;
-    height: 215px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-top-right-radius: 17px;
-    gap: 30px;
-    transition: transform 0.2s;
+    /* flex-direction: column; */
+    line-height: 0px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px;
 
-    &__title{
-        display: flex;
-        /* flex-direction: column; */
-        line-height: 0px;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding-top: 20px;
-
-        img{
-            width: 100px;
-        }
+    h2{
+        border-left: solid 2px red;
     }
 
-    &__img{
-        display: flex;
-        justify-content: center;
-
-        img{
-            width: 400px;
-        }
+    img {
+      width: 140px;
     }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    background-image: url("../../../public/assets/plus.png");
+    background-size: 12px;
+    background-repeat: repeat;
+    background-size: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-position-x: -1px;
+    padding: 5%;
+
+    img {
+      width: 502px;
+      height: 149px;
+    }
+  }
 }
 
 .team:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.C43 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.C43:hover {
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.SF-23 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.SF-23:hover {
+  border-top: 2px solid red;
+  border-right: 2px solid red;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.MCL60 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.MCL60:hover {
+  border-top: 2px solid #ff7e08;
+  border-right: 2px solid #ff7e08;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.RB19 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.RB19:hover {
+  border-top: 2px solid #1202f5;
+  border-right: 2px solid #1202f5;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.W14 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.W14:hover {
+  border-top: 2px solid #00e0b7;
+  border-right: 2px solid #00e0b7;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.AMR23 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.AMR23:hover {
+  border-top: 2px solid #00594f;
+  border-right: 2px solid #00594f;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.A523 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.A523:hover {
+  border-top: 2px solid #0276a3;
+  border-right: 2px solid #0276a3;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.FW45 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.FW45:hover {
+  border-top: 2px solid #00a0de;
+  border-right: 2px solid #00a0de;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.AT04 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.AT04:hover {
+  border-top: 2px solid #0a2840;
+  border-right: 2px solid #0a2840;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
+}
+
+.VF-23 {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  height: 340px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-top-right-radius: 17px;
+  gap: 30px;
+  transition: transform 0.2s;
+  padding-right: 10px;
+}
+
+.VF-23:hover {
+  border-top: 2px solid #838383;
+  border-right: 2px solid #838383;
+  border-top-right-radius: 17px;
+  transform: scale(1.05);
 }

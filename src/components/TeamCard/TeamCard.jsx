@@ -10,7 +10,7 @@ const TeamCard = (team) => {
     const { user } = useSelector((state) => state.auth);
 
   return (
-    <div className="team">
+    <div className= {team.team.chassis}>
       <div className="team__title">
         <h2>{team.team.name}</h2>
         {/* <h5>{team.team}</h5> */}

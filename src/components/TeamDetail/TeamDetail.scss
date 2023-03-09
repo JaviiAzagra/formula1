@@ -1,33 +1,57 @@
-.detail{
-    text-align: center;
+.detail {
+  text-align: center;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 
-    &__box{
-        display: flex;
-        justify-content: center;
-        gap: 170px;
-        padding-top: 100px;
+  h1 {
+    font-family: "Orbitron", sans-serif, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+  }
 
-        &--info{
-            text-align: justify;
+  &__box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 100px;
 
-            img{
-                width: 300px;
-            }
+    &--info {
+      text-align: justify;
 
-            p{
-                font-weight: bold;
-            }
+      img {
+        width: 300px;
+      }
 
-            span{
-                font-weight: 200;
-            }
-        }
+      p {
+        font-weight: bold;
+      }
 
-        &--drivers{
-
-            img{
-                width: 260px;
-            }
-        }
+      span {
+        font-weight: 200;
+      }
     }
+
+    &--drivers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 50px;
+
+      &--img {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          width: 260px;
+        }
+      }
+
+      &--car {
+        img {
+          width: 600px;
+        }
+      }
+    }
+  }
 }

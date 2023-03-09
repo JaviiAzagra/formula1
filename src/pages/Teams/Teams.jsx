@@ -16,7 +16,15 @@ const Teams = () => {
   const filteredTeams = [];
 
   teams.map((team) => {
-    if (team.name.toLowerCase().includes(searchInputValue.toLowerCase())) {
+    if (
+      team.name.toLowerCase().includes(searchInputValue.toLowerCase()) ||
+      team.drivernameone
+        .toLowerCase()
+        .includes(searchInputValue.toLowerCase()) ||
+      team.drivernamesecond
+        .toLowerCase()
+        .includes(searchInputValue.toLowerCase())
+    ) {
       filteredTeams.push(team);
     }
   });
@@ -35,7 +43,6 @@ const Teams = () => {
                 </div>
               </div>
             </fieldset>
-          
           </div>
           <div className="top__text">
             <p>

@@ -1,40 +1,58 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import TeamCard from '../../components/TeamCard/TeamCard';
-import { getTeams } from '../../redux/teams/teams.function';
-import './Teams.scss';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import TeamCard from "../../components/TeamCard/TeamCard";
+import { getTeams } from "../../redux/teams/teams.function";
+import "./Teams.scss";
 
 const Teams = () => {
+  const dispatch = useDispatch();
+  const { teams, isLoading, error } = useSelector((state) => state.teams);
+  const [searchInputValue, setSearchInputValue] = useState("");
 
-    const dispatch = useDispatch();
-    const {teams, isLoading, error} = useSelector((state) => state.teams);
-    const [searchInputValue, setSearchInputValue] = useState("");
+  useEffect(() => {
+    dispatch(getTeams());
+  }, []);
 
-    useEffect(() => {
-        dispatch(getTeams());
-    }, []);
+  const filteredTeams = [];
 
-    const filteredTeams = [];
+  teams.map((team) => {
+    if (team.name.toLowerCase().includes(searchInputValue.toLowerCase())) {
+      filteredTeams.push(team);
+    }
+  });
 
-    teams.map((team) => {
-        if (team.name.toLowerCase().includes(searchInputValue.toLowerCase())) {
-            filteredTeams.push(team)
-        }
-    });
-
-    const teamsInfo = filteredTeams.length ? filteredTeams : teams;
+  const teamsInfo = filteredTeams.length ? filteredTeams : teams;
 
   return (
     <>
       {!isLoading && (
-        <div className="search-wrapper">
-          <input
-            type="search"
-            className="input-search"
-            placeholder="Search"
-            value={searchInputValue}
-            onChange={(e) => setSearchInputValue(e.target.value)}
-          />
+        <div className="top">
+          <div className="container listing-header">
+            <fieldset className="f1-border--top-right f1-border-color--carbonBlack">
+              <div className="row">
+                <div className="col-12">
+                  <h1 class="f1-black--xxl no-margin">F1 Teams 2023</h1>
+                </div>
+              </div>
+            </fieldset>
+          
+          </div>
+          <div className="top__text">
+            <p>
+              Discover everything you need to know about this year's Formula 1
+              teams - drivers, podium finishes, points earned and championship
+              titles.
+            </p>
+          </div>
+          <div className="top__search">
+            <input
+              type="search"
+              className="input-search"
+              placeholder="Search"
+              value={searchInputValue}
+              onChange={(e) => setSearchInputValue(e.target.value)}
+            />
+          </div>
         </div>
       )}
       <div className="teams">
@@ -46,11 +64,10 @@ const Teams = () => {
           teamsInfo.map((team) => {
             return <TeamCard key={team._id} team={team} />;
           })
-        )} 
+        )}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Teams
-
+export default Teams;

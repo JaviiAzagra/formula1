@@ -1,0 +1,33 @@
+.detail{
+    text-align: center;
+
+    &__box{
+        display: flex;
+        justify-content: center;
+        gap: 170px;
+        padding-top: 100px;
+
+        &--info{
+            text-align: justify;
+
+            img{
+                width: 300px;
+            }
+
+            p{
+                font-weight: bold;
+            }
+
+            span{
+                font-weight: 200;
+            }
+        }
+
+        &--drivers{
+
+            img{
+                width: 260px;
+            }
+        }
+    }
+}

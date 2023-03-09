@@ -17,7 +17,7 @@ const DriverCard = (driver) => {
       </div>
       <div className="driver__img">
         <img
-          onClick={() => navigate(`/drivers/${driver.driver.name}`)}
+          onClick={() => navigate(`/drivers/${driver.driver._id}`)}
           className="movie-card-image"
           referrerPolicy="no-referrer"
           src={driver.driver.img}

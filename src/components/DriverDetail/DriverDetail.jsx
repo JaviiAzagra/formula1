@@ -10,7 +10,7 @@ const DriverDetail = () => {
     useEffect(() => {
         const fetchDriver = async () => {
             const { data } = await axios.get(
-                `http://localhost:8080/drivers/${id}`
+                `http://192.168.1.70:8080/drivers/${id}`
             );
             setDriver(data);
         };

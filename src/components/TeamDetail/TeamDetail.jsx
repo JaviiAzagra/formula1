@@ -14,6 +14,7 @@ const TeamDetail = () => {
     };
     fetchTeam();
   }, []);
+  
 
   return (
     <div className="detail">
